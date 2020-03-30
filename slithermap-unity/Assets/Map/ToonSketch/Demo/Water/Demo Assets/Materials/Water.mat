@@ -9,7 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Water
   m_Shader: {fileID: 4800000, guid: 452df626e52b91642afa91d1a360014b, type: 3}
-  m_ShaderKeywords: TCP2_DISABLE_WRAPPED_LIGHT _ALPHABLEND_ON _TS_RIMCOLORING_ON
+  m_ShaderKeywords: TCP2_DISABLE_WRAPPED_LIGHT _ALPHABLEND_ON _SURFACE_USEWORLD _TS_RIMCOLORING_ON
+    _WAVE_USEWORLD
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -78,17 +79,17 @@ Material:
     - _DstBlend: 10
     - _FlowWaveFactor: 0.5
     - _FoamAmount: 0
-    - _FoamDistance: 50
-    - _FoamDistort: 0.1
-    - _FoamFade: 0.5
+    - _FoamDistance: 10
+    - _FoamDistort: 0
+    - _FoamFade: 1
     - _FoamHardEdge: 1
-    - _FoamMaxDepth: 0.25
-    - _FoamMinDepth: 0.025
+    - _FoamMaxDepth: 0.050000004
+    - _FoamMinDepth: 0.01
     - _FoamSoftNoise: 1
-    - _FoamSoftness: 1
-    - _FoamSpeed: 0.1
-    - _FoamStrength: 1
-    - _FoamTiling: 100
+    - _FoamSoftness: 0.5
+    - _FoamSpeed: 0
+    - _FoamStrength: 0.5
+    - _FoamTiling: 50
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 0
@@ -125,19 +126,19 @@ Material:
     - _SurfaceDistort: 0.1
     - _SurfaceSpeed: 0.1
     - _SurfaceStrength: 0.1
-    - _SurfaceTiling: 100
-    - _SurfaceUseWorld: 0
+    - _SurfaceTiling: 50
+    - _SurfaceUseWorld: 1
     - _TCP2_DISABLE_WRAPPED_LIGHT: 1
     - _TCP2_RAMPTEXT: 0
     - _TCP2_SPEC_TOON: 0
     - _TCP2_STYLIZED_FRESNEL: 0
     - _UVSec: 0
     - _VertexData: 0
-    - _WaterDepthCutoff: 0.5
+    - _WaterDepthCutoff: 0.15
     - _WaveAmount: 0.5
     - _WaveSpeed: 0.1
     - _WaveStrength: 0.1
-    - _WaveUseWorld: 0
+    - _WaveUseWorld: 1
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
@@ -147,6 +148,6 @@ Material:
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _SColor: {r: 0.24999997, g: 0.24999997, b: 0.24999997, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _WaterColorDeep: {r: 0.095674604, g: 0.5798214, b: 0.8113208, a: 0.84705883}
-    - _WaterColorFoam: {r: 1, g: 1, b: 1, a: 0.5019608}
+    - _WaterColorDeep: {r: 0.095674604, g: 0.5798214, b: 0.8113208, a: 1}
+    - _WaterColorFoam: {r: 1, g: 1, b: 1, a: 0.3137255}
     - _WaterColorShallow: {r: 0.095674604, g: 0.5798214, b: 0.8113208, a: 0.78431374}
